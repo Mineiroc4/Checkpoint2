@@ -45,8 +45,9 @@ console.log(checador(100))
     A mensagem “Aprovado com Distinção”, se a média for igual a 10;
     A mensagem “Reprovado” se a média for menor de do que 7;
 */
-function nota(media){
-  if (media >= 7 && media < 10){                                        // Teste para aprovação.
+function aluno(n1,n2){
+   let media = (n1 + n2) / 2;                                           // Definição da variável média do aluno.
+   if (media >= 7 && media < 10){                                       // Teste para aprovação.
     return "Aprovado!"
   }else if (media == 10){                                               // Teste para aprovação com distinção.
     return "Aprovado com Distinção!"
@@ -56,4 +57,4 @@ function nota(media){
     return "Valor de nota invalído!"                                    
   }
 }
-console.log(nota(10))
+console.log(aluno(10,10))
